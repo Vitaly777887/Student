@@ -1,6 +1,3 @@
-DELETE
-FROM discipline
-where 1 = 1;
 INSERT INTO discipline (discipline_id, name)
 VALUES (1, 'АНГЛ');
 INSERT INTO discipline (discipline_id, name)

@@ -16,10 +16,10 @@ public class Discipline {
     private int discipline_id;
     private String name;
 
-    @OneToMany(mappedBy = "discipline", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "discipline")
     private Set<StudentPerformance> studentPerformances;
 
-    @OneToMany(mappedBy = "discipline", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "discipline")
     private Set<Syllabus> syllabuses;
 
 }

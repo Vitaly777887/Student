@@ -1,6 +1,3 @@
-DELETE
-FROM specially
-where 1 = 1;
 INSERT INTO specially (specially_id, name)
 VALUES (1, 'Прикладная математика и информатика');
 INSERT INTO specially (specially_id, name)

@@ -22,7 +22,7 @@ public class Student {
     @Enumerated(EnumType.ORDINAL)
     private EducationForm educationForm;
     @ManyToOne
-    @JoinColumn(name = "group_id", nullable = false)
+    @JoinColumn(nullable = false)
     private StudentGroup studentGroup;
 
     public Student(String surname, String name, String secondName, int yearAdmission, EducationForm educationForm, StudentGroup studentGroup) {

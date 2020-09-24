@@ -25,6 +25,7 @@ import static org.junit.Assert.assertEquals;
 @Transactional
 @RunWith(SpringRunner.class)
 @SqlGroup({
+        @Sql(scripts = "classpath:scripts/clean.sql"),
         @Sql(scripts = "classpath:scripts/group_populate.sql"),
         @Sql(scripts = "classpath:scripts/student_populate.sql"),
         @Sql(scripts = "classpath:scripts/specially_populate.sql"),

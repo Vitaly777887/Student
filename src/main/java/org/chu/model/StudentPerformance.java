@@ -19,10 +19,10 @@ public class StudentPerformance {
     private int semester;
     private int year;
     @ManyToOne
-    @JoinColumn(name = "student_id", nullable = false)
+    @JoinColumn( nullable = false)
     private Student student;
     @ManyToOne
-    @JoinColumn(name = "discipline_id", nullable = false)
+    @JoinColumn(nullable = false)
     private Discipline discipline;
     private int rating;
 

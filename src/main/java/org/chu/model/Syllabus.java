@@ -17,11 +17,11 @@ public class Syllabus {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long syllabus_id;
     @ManyToOne
-    @JoinColumn(name = "specially_id", nullable = false)
+    @JoinColumn(nullable = false)
     private Specially specially;
 
     @ManyToOne
-    @JoinColumn(name = "discipline_id", nullable = false)
+    @JoinColumn(nullable = false)
     private Discipline discipline;
     private int semester;
     private int countHours;
