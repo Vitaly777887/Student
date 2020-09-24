@@ -25,11 +25,11 @@ import static org.junit.Assert.assertEquals;
 @Transactional
 @RunWith(SpringRunner.class)
 @SqlGroup({
+        @Sql(scripts = "classpath:scripts/group_populate.sql"),
         @Sql(scripts = "classpath:scripts/student_populate.sql"),
         @Sql(scripts = "classpath:scripts/specially_populate.sql"),
-        @Sql(scripts = "classpath:scripts/syllabus_populate.sql"),
         @Sql(scripts = "classpath:scripts/discipline_populate.sql"),
-        @Sql(scripts = "classpath:scripts/group_populate.sql"),
+        @Sql(scripts = "classpath:scripts/syllabus_populate.sql"),
         @Sql(scripts = "classpath:scripts/student_performance_populate.sql"),
 
 })
